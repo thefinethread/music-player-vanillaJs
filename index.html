@@ -4,10 +4,80 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+            integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script type="module" src="script.js" defer></script>
         <title>Music Player</title>
     </head>
-    <body>
-        hi
+    <body class="flex">
+        <div class="container flex">
+            <div class="music-container">
+                <div class="bg-overlay"></div>
+                <div class="cover-pic"></div>
+                <div class="music-player">
+                    <audio
+                        src="./songs/somewhere-only-we-know.mp3"
+                        preload="metadata"
+                    ></audio>
+                    <div class="song-info">
+                        <span class="title">Somewhere only we know</span>
+                        <span class="artist">Gustixa</span>
+                    </div>
+                    <div class="progress-container">
+                        <input
+                            id="audio-time"
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="1"
+                            value="0"
+                        />
+                        <div class="timestamps flex">
+                            <span class="current-time">0:00</span>
+                            <span class="song-duration">3:04</span>
+                        </div>
+                    </div>
+                    <div class="song-controls flex">
+                        <button class="btn shuffle">
+                            <i class="ri-shuffle-line"></i>
+                        </button>
+                        <div class="audio-control flex">
+                            <button class="btn prev">
+                                <i class="ri-skip-back-fill"></i>
+                            </button>
+                            <button class="btn play-pause">
+                                <i class="ri-play-circle-fill"></i>
+                            </button>
+                            <button class="btn next">
+                                <i class="ri-skip-forward-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="extra-controls flex">
+                        <div class="volume-container flex">
+                            <button class="btn volume-btn">
+                                <i class="ri-volume-down-line"></i>
+                            </button>
+                            <input
+                                id="volume"
+                                min="0"
+                                max="10"
+                                step="1"
+                                value="10"
+                                type="range"
+                            />
+                        </div>
+                        <!-- <button class="btn playlist">
+                            <i class="ri-play-list-line"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

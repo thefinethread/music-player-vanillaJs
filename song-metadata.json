@@ -1,0 +1,23 @@
+[
+    {
+        "title": "somewhere only we know",
+        "artist": "Gustixa",
+        "songFile": "./songs/somewhere-only-we-know.mp3",
+        "coverPic": "./cover-images/somewhere-only-we-know.jpg",
+        "bg": "rgba(225,225,225,0.8)"
+    },
+    {
+        "title": "fly me to the moon",
+        "artist": "Joytastic Sarah",
+        "songFile": "./songs/fly-me-to-the-moon.mp3",
+        "coverPic": "./cover-images/fly-me-to-the-moon.jpg",
+        "bg": "rgba(0, 154, 250, 0.8)"
+    },
+    {
+        "title": "tum hi ho(instrumental)",
+        "artist": "Mithoon",
+        "songFile": "./songs/tum-hi-ho-instrumental.mp3",
+        "coverPic": "./cover-images/tum-hi-ho.jpg",
+        "bg": "rgba(0, 83, 250, 0.8)"
+    }
+]
